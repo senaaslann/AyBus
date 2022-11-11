@@ -1,16 +1,12 @@
 package com.aybuke.AyBus.repository.entity;
 
-import lombok.AllArgsConstructor;
+
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 
 @Table
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
 @Data
 @Builder
 public class Seat {
@@ -19,4 +15,20 @@ public class Seat {
     Long id;
     boolean status;
     Passenger passenger;
+
+    public  Seat( boolean status, Passenger passenger){
+        this.status = status;
+        this.passenger = passenger;
+    }
+
+    public void display(){
+        if (status){
+            System.out.println("Koltuk Doludur");
+
+        }else {
+            System.out.println("Koltuk id:" + id);
+        }
+
+
+    }
 }

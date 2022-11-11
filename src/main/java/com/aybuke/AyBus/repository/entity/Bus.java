@@ -1,9 +1,7 @@
 package com.aybuke.AyBus.repository.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 
 import javax.persistence.Entity;
@@ -14,8 +12,6 @@ import java.util.List;
 
 @Table
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
 @Data
 @Builder
 public class Bus {
@@ -26,5 +22,15 @@ public class Bus {
     List<Seat> seatList;
     String numberPlate;
 
+    public Bus(int seatNum,List<Seat> seatList,String numberPlate){
+        this.seatNum = seatNum;
+        this.seatList = seatList;
+        this.numberPlate = numberPlate;
+    }
 
+    public void bookSeat(Passenger p , int seatId){
+
+
+    }
 }
+

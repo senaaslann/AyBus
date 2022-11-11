@@ -2,6 +2,7 @@ package com.aybuke.AyBus.controller;
 
 import com.aybuke.AyBus.service.PhoneService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,4 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class PhoneController {
     private final PhoneService service;
+
+
 }
