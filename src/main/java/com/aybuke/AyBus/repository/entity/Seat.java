@@ -13,7 +13,7 @@ public class Seat {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    boolean status;
+    Boolean status;
     Passenger passenger;
 
     public  Seat( boolean status, Passenger passenger){
