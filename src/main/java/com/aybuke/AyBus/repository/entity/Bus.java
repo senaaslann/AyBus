@@ -28,7 +28,7 @@ public class Bus {
         this.numberPlate = numberPlate;
     }
 
-    public void bookSeat(Passenger p , int seatId){
+    public void bookSeat(Passenger p , int seatId){ // disaridan alacagimiz degerler passenger bilgileri ve oturmak istedigi koltuk numarasi
 
 
     }
